@@ -1,0 +1,6 @@
+<td><%= transaction.amount %></td>
+<td><%= transaction.description %></td>
+<td><%= transaction.date.strftime('%Y-%m-%d') %></td>
+<td><%= link_to "Show", transaction, class: "btn btn-success" %></td>
+<td><%= link_to "Edit", edit_transaction_path(transaction), class: "btn btn-success" %></td>
+<td><%= link_to "Destroy", transaction, data: { turbo_method: :delete }, class: "btn btn-danger" %></td>
